@@ -1,6 +1,14 @@
 // Question 1
-const isRealPalindrome = () => {
+const isRealPalindrome = (str) => {
+    const alpha = /[a-z]/;
+    const nStr = [...str.toLowerCase()].filter(char => char.match(alpha)).join('');
 
+    for (let i = 0; i < Math.ceil(nStr.length / 2); i++) {
+        if (nStr[i] !== nStr[nStr.length - (i + 1)]) {
+            return false;
+        }
+    }
+    return true;
 };
 
 // Question 2

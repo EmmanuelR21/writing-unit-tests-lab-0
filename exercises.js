@@ -26,8 +26,18 @@ const runningTotal = (numArr) => {
 };
 
 // Question 3
-const swap = () => {
+const swap = (string) => {
+    const newStr = string.split(' ');
 
+    for (let i = 0; i < newStr.length; i++) {
+        const tempLetter = newStr[i][0];
+        newStr[i] = newStr[i].split('');
+        newStr[i][0] = newStr[i][newStr[i].length - 1];
+        newStr[i][newStr[i].length - 1] = tempLetter;
+        newStr[i] = newStr[i].join('');
+    }
+
+    return newStr.join(' ');
 };
 
 // Question 4

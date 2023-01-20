@@ -74,8 +74,21 @@ const union = (arr1, arr2) => {
 };
 
 // Question 6
-const firstRecurring = () => {
+const firstRecurring = (string) => {
+    const wordLetters = {};
 
+    for (let i = 0; i < string.length; i++) {
+        if (wordLetters[string[i]]) {
+            wordLetters[string[i]] += 1;
+        } else {
+            wordLetters[string[i]] = 1;
+        }
+        if (wordLetters[string[i]] > 1) {
+            return string[i];
+        }
+    }
+
+    return "";
 };
 
 // Question 7

@@ -1,4 +1,14 @@
-const exercises = require("./exercises");
+const {
+	isRealPalindrome,
+	runningTotal,
+	swap,
+	wordSizes,
+	union,
+	firstRecurring,
+	showMultiplicativeAverage,
+	multiplyList,
+	sequence,
+} = require("./exercises");
 
 //write tests in this file
 test("Question 1: isRealPalindrome", () => {

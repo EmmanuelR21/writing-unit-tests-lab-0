@@ -47,8 +47,8 @@ test("Question 4: wordSizes", () => {
 });
 
 test("Question 5: union", () => {
-	expect(union([1, 3, 5], [3, 6, 9])).toBe([1, 3, 5, 6, 9]); // [1, 3, 5, 6, 9]
-	expect(union([2, 2, 2, 2], [10, 5, 2])).toBe([2, 10, 5]); // [2, 10, 5]
+	expect(union([1, 3, 5], [3, 6, 9])).toStrictEqual([1, 3, 5, 6, 9]); // [1, 3, 5, 6, 9]
+	expect(union([2, 2, 2, 2], [10, 5, 2])).toStrictEqual([2, 10, 5]); // [2, 10, 5]
 });
 
 test("Question 6: firstRecurring", () => {

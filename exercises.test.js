@@ -36,14 +36,14 @@ test("Question 3: swap", () => {
 });
 
 test("Question 4: wordSizes", () => {
-	expect(wordSizes("Four score and seven.")).toBe({ 3: 1, 4: 1, 5: 1, 6: 1 }); // { "3": 1, "4": 1, "5": 1, "6": 1 }
-	expect(wordSizes("Hey diddle diddle, the cat and the fiddle!")).toBe({
+	expect(wordSizes("Four score and seven.")).toStrictEqual({ 3: 1, 4: 1, 5: 1, 6: 1 }); // { "3": 1, "4": 1, "5": 1, "6": 1 }
+	expect(wordSizes("Hey diddle diddle, the cat and the fiddle!")).toStrictEqual({
 		3: 5,
 		6: 1,
 		7: 2,
 	}); // { "3": 5, "6": 1, "7": 2 }
-	expect(wordSizes("What's up doc?")).toBe({ 2: 1, 4: 1, 6: 1 }); // { "2": 1, "4": 1, "6": 1 }
-	expect(wordSizes("")).toBe({}); // {}
+	expect(wordSizes("What's up doc?")).toStrictEqual({ 2: 1, 4: 1, 6: 1 }); // { "2": 1, "4": 1, "6": 1 }
+	expect(wordSizes("")).toStrictEqual({}); // {}
 });
 
 test("Question 5: union", () => {

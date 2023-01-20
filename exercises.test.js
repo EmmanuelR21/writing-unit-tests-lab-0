@@ -21,10 +21,10 @@ test("Question 1: isRealPalindrome", () => {
 });
 
 test("Question 2: runningTotal", () => {
-	expect(runningTotal([2, 5, 13])).toBe([2, 7, 20]); // [2, 7, 20]
-	expect(runningTotal([14, 11, 7, 15, 20])).toBe([14, 25, 32, 47, 67]); // [14, 25, 32, 47, 67]
-	expect(runningTotal([3])).toBe([3]); // [3]
-	expect(runningTotal([])).toBe([]); // []
+	expect(runningTotal([2, 5, 13])).toStrictEqual([2, 7, 20]); // [2, 7, 20]
+	expect(runningTotal([14, 11, 7, 15, 20])).toStrictEqual([14, 25, 32, 47, 67]); // [14, 25, 32, 47, 67]
+	expect(runningTotal([3])).toStrictEqual([3]); // [3]
+	expect(runningTotal([])).toStrictEqual([]); // []
 });
 
 test("Question 3: swap", () => {

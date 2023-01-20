@@ -12,8 +12,17 @@ const isRealPalindrome = (str) => {
 };
 
 // Question 2
-const runningTotal = () => {
+const runningTotal = (numArr) => {
+    const newArr = numArr;
+    if (numArr.length < 2) {
+        return numArr;
+    }
 
+    for (let i = 1; i < numArr.length; i++) {
+        newArr[i] += numArr[i - 1];
+    }
+
+    return newArr;
 };
 
 // Question 3

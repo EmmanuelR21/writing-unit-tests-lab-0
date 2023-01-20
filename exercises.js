@@ -41,8 +41,20 @@ const swap = (string) => {
 };
 
 // Question 4
-const wordSizes = () => {
+const wordSizes = (str) => {
+    if(str === "") return {}
+    const numOfLetters = {};
+    const wordLengthArr = str.split(' ').map(word => word.length);
+    wordLengthArr.sort();
 
+    for (let i = 0; i < wordLengthArr.length; i++) {
+        if (numOfLetters[wordLengthArr[i]]) {
+            numOfLetters[wordLengthArr[i]] += 1;
+        } else {
+            numOfLetters[wordLengthArr[i]] = 1;
+        }
+    }
+    return numOfLetters;
 };
 
 // Question 5

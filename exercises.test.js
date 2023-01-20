@@ -64,14 +64,14 @@ test("Question 7: showMultiplicativeAverage", () => {
 });
 
 test("Question 8: multiplyList", () => {
-	expect(multiplyList([3, 5, 7], [9, 10, 11])).toBe([27, 50, 77]); // [27, 50, 77]
-	expect(multiplyList([5, 10, 15, 20], [1, 2, 3, 4])).toBe([5, 20, 45, 80]); // [5, 20, 45, 80]
+	expect(multiplyList([3, 5, 7], [9, 10, 11])).toStrictEqual([27, 50, 77]); // [27, 50, 77]
+	expect(multiplyList([5, 10, 15, 20], [1, 2, 3, 4])).toStrictEqual([5, 20, 45, 80]); // [5, 20, 45, 80]
 });
 
 test("Question 9: sequence", () => {
-	expect(sequence(5)).toBe([1, 2, 3, 4, 5]); // [1, 2, 3, 4, 5]
-	expect(sequence(3)).toBe([1, 2, 3]); // [1, 2, 3]
-	expect(sequence(1)).toBe([1]); // [1]
+	expect(sequence(5)).toStrictEqual([1, 2, 3, 4, 5]); // [1, 2, 3, 4, 5]
+	expect(sequence(3)).toStrictEqual([1, 2, 3]); // [1, 2, 3]
+	expect(sequence(1)).toStrictEqual([1]); // [1]
 });
 
 /* Example Test 

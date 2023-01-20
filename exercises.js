@@ -102,12 +102,18 @@ const showMultiplicativeAverage = (numArr) => {
 };
 
 // Quetsion 8
-const multiplyList = () => {
+const multiplyList = (numArr1, numArr2) => {
+    const productArr = numArr1.map((num, i) => num * numArr2[i])
+    return productArr
 };
 
 // Question 9
-const sequence = () => {
-
+const sequence = (num) => {
+    const arr = []
+    for(let i = 1; i <= num; i++) {
+        arr.push(i)
+    }
+    return arr
 };
 
 // The below code connects this JS file to our test file

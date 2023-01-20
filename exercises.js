@@ -58,8 +58,19 @@ const wordSizes = (str) => {
 };
 
 // Question 5
-const union = () => {
+const union = (arr1, arr2) => {
+    const combinedArr = [...arr1, ...arr2];
+    const returnArr = [];
+    let mem = '';
 
+    for (let i = 0; i < combinedArr.length; i++) {
+        if (!mem.includes(combinedArr[i])) {
+            returnArr.push(combinedArr[i]);
+            mem += combinedArr[i];
+        }
+    }
+
+    return returnArr;
 };
 
 // Question 6

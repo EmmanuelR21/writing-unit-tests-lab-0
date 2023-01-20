@@ -92,8 +92,13 @@ const firstRecurring = (string) => {
 };
 
 // Question 7
-const showMultiplicativeAverage = () => {
+const showMultiplicativeAverage = (numArr) => {
+    let product = 1;
 
+    for (let i = 0; i < numArr.length; i++) {
+        product *= numArr[i];
+    }
+    return (product / numArr.length).toFixed(3);
 };
 
 // Quetsion 8
